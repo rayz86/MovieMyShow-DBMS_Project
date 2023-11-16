@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login-MovieMyShow</title>
+        <link rel="stylesheet" href="./css/lgcss.css" />
+    </head>
+    <body>
+        <header>
+            <img src="./css/logo.png" width="px"height="100px">
+        </header>
+        <script>
+            function redirectToHome()
+            {
+                window.location.href="homepage.html";
+            }
+        </script>
+        <form method="post" action="./php/login.php" onsubmit="redirectToHome()" autocomplete="off">
+            <div class="input">
+                <h1>Welcome to MovieMyshow</h1>
+                <h2>Sign-in</h2>
+                <input type="textbox" placeholder="username" name="username" required><br>
+                <input type="password" placeholder="password" name="password" required><br><br>
+                <input type="submit" id="sub"><br><br>  
+                <a href="">New user? Click here to sign-up</a>
+            </div>
+        </form>
+        <br>
+    </body>
+    <footer>
+        <label>©2023 MovieMyShow LLC.</label><br>
+        <label>All Rights Reserved.</label>
+    </footer>
+</html>
+
