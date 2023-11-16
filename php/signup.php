@@ -18,7 +18,10 @@
     $r1=mysqli_query($conn,$q1);
 
     if($r1)
+    {
         echo "Login record inserted successfully";
+        header("Location: ../homepage.html");
+    }
     else
         echo "error: Login record not inserted";
     
